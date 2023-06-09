@@ -1,21 +1,81 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>reversed account D</title>
+  <title>Reversed ACC DB by DonutSuZu</title>
+  <style>
+    textarea {
+      width: 300px;
+      height: 200px;
+    }
+  </style>
 </head>
 <body>
     <div>
     <img src="RADB.png">
     <h1>reversed account DB</h1>
+        <h2>1.Load Left bottom DB.txt</h2>    
+        <h2>2.Load Right Bottom ACC.txt</h2>
+        <h2>3.比較</h2>
     </div>
-    
-    <script>
-    document.write("<p>JavaScript テスト</p>");
-        
-        
-        
-    </script>
+  <input type="file" id="file1" accept=".txt">
+  <input type="file" id="file2" accept=".txt">
+  <br>
+  <button onclick="compareFiles()">比較</button>
+  <br>
+  <p>結果:</p>
+  <p>一致しなかった要素の数: <span id="mismatchCount">0</span></p>
+  <p>一致した要素の数: <span id="matchCount">0</span></p>
+  <textarea id="result" readonly></textarea>
+
+  <script>
+    function compareFiles() {
+      var file1 = document.getElementById("file1").files[0];
+      var file2 = document.getElementById("file2").files[0];
+
+      if (!file1 || !file2) {
+        alert("2つのファイルを選択してください。");
+        return;
+      }
+
+      var reader1 = new FileReader();
+      reader1.onload = function(e) {
+        var content1 = e.target.result;
+
+        var reader2 = new FileReader();
+        reader2.onload = function(e) {
+          var content2 = e.target.result;
+
+          var elements1 = content1.split(",");
+          var elements2 = content2.split(",");
+
+          var matchedElements = [];
+          var mismatchCount = 0;
+
+          for (var i = 0; i < elements1.length; i++) {
+            if (elements2.includes(elements1[i])) {
+              matchedElements.push(elements1[i]);
+            } else {
+              mismatchCount++;
+            }
+          }
+
+          var matchCount = matchedElements.length;
+
+          var resultTextarea = document.getElementById("result");
+          resultTextarea.value = matchedElements.join("\n");
+
+          var mismatchCountSpan = document.getElementById("mismatchCount");
+          mismatchCountSpan.textContent = mismatchCount;
+
+          var matchCountSpan = document.getElementById("matchCount");
+          matchCountSpan.textContent = matchCount;
+        };
+
+        reader2.readAsText(file2);
+      };
+
+      reader1.readAsText(file1);
+    }
+  </script>
 </body>
 </html>
