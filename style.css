@@ -10,7 +10,7 @@ header {
   /* 背景の色 */
   background-color: orange;
   /* 背景の画像 */
-  background-image: url(img/autumn.png);
+  background-image: url(img/header.jpg);
   /* 背景の画像を枠いっぱいに広げる */
   background-size: cover;
   /* 内がわの余白 */
