@@ -1,0 +1,86 @@
+/* ===== 全体のスタイル ===== */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-image: url(autumn.png);
+  height: 100%;
+}
+
+/* ===== ヘッダーのスタイル ===== */
+/* ヘッダー */
+header {
+  color: brown;
+  padding: 30px;
+}
+
+/* h1見出し */
+h1 {
+  font-size: 40px;
+  font-family: lobster;
+}
+
+/* ===== メニューのスタイル ===== */
+/* h2見出し */
+h2 {
+  color: brown;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* メニューのセクション */
+section.menu {
+  padding: 30px;
+}
+
+/* メニュー表 */
+table {
+  background-color: ivory;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* メニュー表のセル */
+td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+/* メニュー表の見出しセル */
+th {
+  border: 1px solid black;
+  padding: 10px;
+  background-color: gold;
+}
+
+/* リンク */
+a {
+  color: brown;
+  background-color: gold;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 20px;
+  display: block;
+  text-align: center;
+}
+
+/* リンクにさわった時 */
+a:hover {
+  color: white;
+  background-color: teal;
+}
+
+/* ===== フッターのスタイル ===== */
+/* フッター */
+footer {
+  color: brown;
+  text-align: center;
+  padding-top: 100px;
+}

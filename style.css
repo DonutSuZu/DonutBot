@@ -1,0 +1,158 @@
+/* ===== 全体のスタイル ===== */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== ヘッダーのスタイル ===== */
+/* ヘッダー */
+header {
+  /* 背景の色 */
+  background-color: orange;
+  /* 背景の画像 */
+  background-image: url(header.jpg);
+  /* 背景の画像を枠いっぱいに広げる */
+  background-size: cover;
+  /* 内がわの余白 */
+  padding: 50px;
+}
+
+/* h1見出し */
+h1 {
+  /* 文字の大きさ */
+  font-size: 70px;
+  /* 文字の種類 */
+  font-family: lobster;
+  /* 文字の色 */
+  color: ivory;
+  /* 文字の整列 */
+  text-align: center;
+}
+
+
+/* ===== お店紹介のスタイル ===== */
+/* セクション */
+section {
+  /* 背景の色 */
+  background-color: ivory;
+  /* 内がわの余白 */
+  padding: 30px;
+  /* 文字の整列 */
+  text-align: left;
+}
+
+/* h2見出し */
+h2 {
+  /* 文字の色 */
+  color: brown;
+  /* 文字の大きさ */
+  font-size: 20px;
+  /* 下がわの余白 */
+  margin-bottom: 20px;
+}
+
+/* レイアウト用の箱 */
+div {
+  /* レイアウトのルール */
+  display: flex;
+}
+
+/* 画像 */
+img {
+  /* 横幅 */
+  width: 200px;
+  /* 角丸 */
+  border-radius: 10px;
+}
+
+/* 段落 */
+p {
+  /* 文字の行間 */
+  line-height: 180%;
+  /* 左がわの余白 */
+  margin-left: 20px;
+}
+
+
+/* ===== メニューのスタイル ===== */
+/* メニューのセクション */
+section.menu {
+  /* 背景の画像 */
+  background-image: url(wood.jpg);
+}
+
+/* メニューのh2見出し */
+h2.menu-title {
+  /* 文字の色 */
+  color: white;
+}
+
+/* メニュー表 */
+table {
+  /* 横幅 */
+  width: 100%;
+  /* 下がわの余白 */
+  margin-bottom: 20px;
+  /* 枠線の設定 */
+  border-collapse: collapse;
+  /* 背景の色 */
+  background-color: ivory;
+}
+
+/* メニュー表のセル */
+td {
+  /* 枠線 */
+  border: 1px solid black;
+  /* 内がわの余白 */
+  padding: 10px;
+}
+
+/* メニュー表の見出しセル */
+th {
+  /* 枠線 */
+  border: 1px solid black;
+  /* 内がわの余白 */
+  padding: 10px;
+  /* 背景の色 */
+  background-color: gold;
+}
+
+/* リンク */
+a {
+  /* 文字の色 */
+  color: brown;
+  /* 背景の色 */
+  background-color: gold;
+  /* 内がわの余白 */
+  padding: 10px;
+  /* 文字の装飾 */
+  text-decoration: none;
+  /* 角丸 */
+  border-radius: 20px;
+  /* 並べ方 */
+  display: block;
+  /* 文字の整列 */
+  text-align: center;
+}
+
+/* リンクにさわった時 */
+a:hover {
+  /* 文字の色 */
+  color: white;
+  /* 背景の色 */
+  background-color: teal;
+}
+
+
+/* ===== フッターのスタイル ===== */
+/* フッター */
+footer {
+  /* 文字の色 */
+  color: white;
+  /* 背景の色 */
+  background-color: brown;
+  /* 文字の整列 */
+  text-align: center;
+  /* 内がわの余白 */
+  padding: 10px;
+}
