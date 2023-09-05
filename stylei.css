@@ -1,0 +1,57 @@
+/* ページ全体のスタイル */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* ヘッダースタイル */
+header {
+    background-color: #ff77a9;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* ヒーローセクションのスタイル */
+.hero {
+    background-color: #f0e6f6;
+    padding: 50px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 24px;
+    color: #ff77a9;
+}
+
+/* フッタースタイル */
+footer {
+    background-color: #ff77a9;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
