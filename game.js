@@ -28,10 +28,10 @@ function clickButton(button, isWin) {
     button.classList.remove('button-before-click');
     if (isWin) {
         score++;
-        button.style.backgroundImage = 'url("img/payusa.png")';
+        button.style.backgroundImage = 'url("payusa.png")';
     } else {
         score -= 0.5;
-        button.style.backgroundImage = 'url("img/gibsusa.png")';
+        button.style.backgroundImage = 'url("gibsusa.png")';
     }
     button.onclick = null;
     document.getElementById('score').innerText = `Score: ${score}`;
