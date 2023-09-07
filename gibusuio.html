@@ -1,34 +1,49 @@
-<html lang="ja">
-
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
- 　　<title>DonutSuZu.web</title>
+    <title>ギブスニキ.io</title>
+    <style>
+        #gameboard {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .button {
+            margin: 5px;
+            width: 80px;
+            height: 80px;
+            background-size: cover;
+        }
+        .button-before-click {
+            background-image: url('button_image.jpg');
+        }
+        .hidden {
+            filter: blur(10px);
+        }
+        h1{
+            color: red;
+        }
+        h2{
+            color: Green;
+
+        }
+        h3{
+            color: blue;
+        }
+        body{
+            background-color: grey;
+        }
+    </style>
 </head>
-  
-
 <body>
-    <header>
-        <h1>またたびねこのwebサイトへようこそ！！</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">ほーむ</a></li>
-                <li><a href="about.html">またたびねこについて</a></li>
-                <li><a href="blog.html">ブログ？</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="hero">
-            <h2>またたびねこはまたたびが大好き！！</h2>
-            
-            <p>あとは猫じゃらし！</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 @DonutSuZu</p>
-    </footer>
+    <h1>ギブスニキのPayPayチャレンジ！ By DonutSuZu</h1>
+    <h2>スタートを押してPayPayうさぎを探せ！</h2>
+    <h3>PayPayうさぎは1点！ギブスうさぎはマイナス1点！</h3>
+    <h4>チャレンジは10回！6点以上がクリア！</h4>
+    <button id="startButton">Start</button>
+    <div id="gameboard"></div>
+    <div id="score">Score: 0</div>
+    <div id="result"></div>
+    <script src="game.js"></script>
 </body>
-
 </html>
