@@ -70,7 +70,7 @@ x-sign {
 }
 
 x-sign:nth-of-type(1) {
-  color: yellow;
+  color: #333;
   --color1: goldenrod;
   --color2: orangered;
   --color3: mediumblue;
