@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>神経衰弱ゲーム</title>
+    <nav>
+            <ul>
+                <li><a href="index.html">ほーむ</a></li>
+                <li><a href="about.html">またたびねこについて</a></li>
+                <li><a href="blog.html">ブログ？</a></li>
+                <li><a href="Minesweeper.html.html">???</a></li>
+            </ul>
+        </nav>
+    <link rel="stylesheet" href="nervous.css">
+</head>
+<body>
+
+    <main id="page-layout">
+
+        <img src="images/tex_contents_1.png" class="side-image" alt="装飾画像 左">
+
+        <div class="game-container">
+            <h1>神経衰弱ゲーム</h1>
+
+            <div id="game-stats">
+                <p>成功ペア: <span id="pairs-found">0</span></p>
+                <p>ミス回数: <span id="misses-count">0</span></p>
+            </div>
+
+            <div id="game-board"></div>
+
+            <button id="reset-button">リセット</button>
+
+            <!-- ★★★ ここのテキストを空にする ★★★ -->
+            <div id="bonus-message"></div>
+        </div>
+
+        <img src="images/tex_contents_2.png" class="side-image" alt="装飾画像 右">
+
+    </main>
+
+    <script src="nervous.js"></script>
+</body>
+</html>

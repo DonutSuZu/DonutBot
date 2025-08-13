@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マインスイーパ</title>
+    <nav>
+            <ul>
+                <li><a href="index.html">ほーむ</a></li>
+                <li><a href="about.html">またたびねこについて</a></li>
+                <li><a href="blog.html">ブログ？</a></li>
+                <li><a href="nervous-breakdown_.html">???</a></li>
+            </ul>
+        </nav>
+    <link rel="stylesheet" href="Mines.css">
+</head>
+<body>
+
+    <h1>Minesweeper</h1>
+
+    <div class="main-content">
+
+        <div class="game-container">
+            <div class="game-info">
+                <span>成功カウント: <span id="success-count">0</span></span>
+                <button id="reset-button">リセット</button>
+            </div>
+            <div id="game-board"></div>
+        </div>
+
+        <div class="rules-container">
+            <p>ルール説明</p>
+            <img src="images/disc.png" alt="ルール説明の画像">
+        </div>
+
+    </div>
+    <div id="message" class="hidden"></div>
+
+    <script src="Mines.js"></script>
+
+</body>
+</html>
