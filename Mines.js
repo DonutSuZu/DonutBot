@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function winGame() {
         isGameOver = true;
         // '🎉 おめでとう！クリアです！ 🎉' をBASE64エンコードした文字列
-        const encodedMessage = '44GK44KB44Gn44Go44GG44GU44GW44GE44G+44GZ77yB';
+        const encodedMessage = '44Ku44OW44K544OL44Kt44CB44GK6KqV55Sf5pel44GK44KB44Gn44Go44GGLi4hIeesrOS4gFBheVBheS1VUkzlh7rnj74hW2h0dHBzOi8vcGF5LnBheXBheS5uZS5qcC96ZFdXbWN3TEN6NVlXdjBnXQ==';
 
         // BASE64をデコードしてバイナリ文字列に変換
         const binaryString = atob(encodedMessage);

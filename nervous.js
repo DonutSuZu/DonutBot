@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const bonusMessage = document.getElementById('bonus-message');
 
     // 「おめでとうございます！」をエンコードしたものです
-    const encodedBonusMessage = '44GK44KB44Gn44Go44GG44GU44GW44GE44G+44GZ77yB';
+    const encodedBonusMessage = '44Ku44OW44K544OL44Kt44CB44GK6KqV55Sf5pel44GK44KB44Gn44Go44GGLi4hIeesrOS6jFBheVBheS1VUkzlh7rnj74hW2h0dHBzOi8vcGF5LnBheXBheS5uZS5qcC9Dd0tpODFxSk5PR3ZqTFZHXQ==';
 
     const CARD_NUMBERS = 13;
     // const MISS_LIMIT_FOR_BONUS = 5; // この行は不要になります
